@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,500,600,700');
+
+body {
+  color: #1b1b1b;
+  font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+a {
+  color: #056cc1;
+}
+
+p,
+li {
+  font-size: 50px;
+}
+
+.remark-inline-code {
+  background-color: #f8f9f9;
+  border: 1px solid #e2e4e6;
+  border-radius: 2px;
+  color: #eb5a46;
+  padding: 1px 3px;
+}
+
+.inverse {
+  background-color: #f7df1e;
+}
+
+.inverse,
+.inverse a {
+  color: #fff;
+}
+
+.inverse h1 {
+  font-size: 80px;
+}
+
+.inverse h2 {
+  font-size: 40px;
+}
+
+.thanks {
+  text-align: left !important;
+}
+
+.thanks h2 {
+  font-size: 60px;
+}
+
+.secondary {
+  opacity: 0.65;
+}

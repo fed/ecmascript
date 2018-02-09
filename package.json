@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "es-talk",
+  "version": "0.0.0",
+  "description": "EcmaScript Latest Features",
+  "license": "MIT",
+  "author": "Federico Knüssel <fknussel@gmail.com>",
+  "repository": "https://github.com/fknussel/es-talk.git",
+  "scripts": {
+    "start": "remarker",
+    "build": "remarker build"
+  },
+  "dependencies": {
+    "remarker": "^1.5.1"
+  }
+}
