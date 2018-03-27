@@ -31,6 +31,13 @@ Can’t be reassigned, arrays and objects can be mutated though as it’s only t
 
 ---
 
+* const does not imply any kind of immutability of the value itself, it only implies immutability of the binding.
+* From a compiler optimisation point of view, it's already really really easy to identify a binding and figure out if it's never reassigned. All of the relevant optimizations are already possible without const ever being a thing.
+* A matter of communication: there are lots of bindings that we happen to never change that we're totally fine if they do change. In fact, that's probably true for most bindings. It's not something your code will generally care about. It's probably a good idea to use const to communicate that you really don't intend for something to be changed.
+* Avoid using let at the top level scope: if you need to use let at the top-level scope, that's a sign you have some sort of *global singleton* state which could cause you problems.
+
+---
+
 # Hoisting
 
 When using var declarations get hoisted, while assignments don’t (temporal dead zone). Unlike what happens with var, variables declared with let and constants can’t be accessed before they get declared.
