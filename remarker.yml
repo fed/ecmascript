@@ -1,7 +1,10 @@
 port: 6789
 title: 'EcmaScript Latest Features'
 css: '' # overrides default styles
-cssFiles: ['style.css']
+cssFiles: [
+  './node_modules/slides-base-css/style.css',
+  './style.css'
+]
 remarkConfig:
   highlightStyle: github
   highlightLines: true

@@ -124,11 +124,11 @@ Arrow functions are automatically bound to their lexical scope.
 ```js
 function asyncGreeting() {
   this.greeting = `G'day mate`;
-    
+
   setTimeout(function () {
     console.log(this.greeting);
   }.bind(this)); // If we don't bind it here, it will log undefined
-    
+
   setTimeout(() => {
     console.log(this.greeting); // This works just fine w/o binding
   });
@@ -456,7 +456,7 @@ function myFunction(stringChunks, ...interpolations) {
   } else {
     nationality = 'unknown';
   }
-  
+
   return stringChunks[0] + name + stringChunks[1] + nationality;
 }
 ```
@@ -626,7 +626,7 @@ class Dog extends Animal {
     this.name = name;
     this.age = age;
   }
- 
+
   static isAwesome() {
     return true;
   }
@@ -671,7 +671,7 @@ They return an object that implements an iteration protocol (i.e.: has a next me
 
 class: center, middle, inverse
 
-# Proxies 
+# Proxies
 
 ---
 
@@ -847,7 +847,7 @@ We can now map, filter, reduce, etc. the items list. But you can’t do all thes
 This is essentially similar to the Array constructor, the only difference being the handling of integer arguments: while Array.of(7) creates an array with a single element, Array(7) creates an empty array with a length property of 7 — note this implies an array of 7 empty slots, not slots with actual undefined values).
 
 ```js
-Array.of(7); // [7] 
+Array.of(7); // [7]
 Array.of(1, 2, 3); // [1, 2, 3]
 Array(7); // [ , , , , , , ]
 Array(1, 2, 3); // [1, 2, 3]
@@ -875,8 +875,8 @@ Array(1, 2, 3); // [1, 2, 3]
 
 ---
 
-class: center, middle, inverse, thanks
+class: center, middle, inverse, contact-details
 
-## .secondary[Slides:] https://bit.ly/asd
+## .secondary[Slides:] https://fknussel.com
 ## .secondary[Email:] fknussel@gmail.com
 ## .secondary[Twitter/GitHub:] @fknussel
