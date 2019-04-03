@@ -12,6 +12,14 @@ class: center, middle, inverse
 
 Reviewing most of ES6 language features through examples and common use cases.
 
+---
+
+# Good Read
+
+http://es6-features.org/
+
+---
+
 Multiple names: ES6 = ES2015 = Harmony?. ES6 sounds more familiar as previous releases were ES5 and ES3. However the year-y version of the name preferred as they want to encourage yearly releases at some point.
 
 ---
